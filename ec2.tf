@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
 
   associate_public_ip_address = "${var.associate_public_ip_address}"
   subnet_id = "${var.subnet_id}"
-  security_groups = ["${aws_security_group.default1.id}"]
+  security_groups = ["${aws_security_group.default.id}"]
 
 
   tags {
